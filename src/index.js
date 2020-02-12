@@ -33,9 +33,7 @@ function onStart(e) {
     timerId = setInterval(() => {
         let color = randomIntegerFromInterval(0, colors.length - 1);
         refs.body.bgColor = colors[color];
-        console.log(5)
     }, 200);
-    console.log(timerId)
     refs.btnStart.removeEventListener("click", onStart);
 }
 
